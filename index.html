@@ -1,160 +1,279 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <!-- SEO(Search Engine Optimization) 즉, 검색엔진을 위해서 자세히 적으면 적을수록 좋음 -->
-        <title>포트폴리오</title>
-        <meta name="description" content="포트폴리오 사이트" />
-        <meta name="author" content="구민석 />"
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />   
-        <!-- OG (Open Graph Data) -->
-        <meta property="og:title" content="민석이의 포트폴리오" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="배포후 생성된 URL" />
-        <meta property="og:image" content="배포후에 생성된 URL" />
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/2a476213ce.js" crossorigin="anonymous"></script>
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- Javascript -->
-        <!-- defer옵션 : Browser가 script를 다운로드 받을 때까지 기다리지 않고, HTML을 표기하기 때문에 성능 ↑ -->
-        <script src="src/main.js" defer></script>
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO(Search Engine Optimization) 즉, 검색엔진을 위해서 자세히 적으면 적을수록 좋음 -->
+    <title>포트폴리오</title>
+    <meta name="description" content="포트폴리오 사이트" />
+    <meta
+      name="author"
+      content="구민석 />"
+      <link
+      rel="shortcut icon"
+      href="images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="민석이의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후에 생성된 URL" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/2a476213ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Javascript -->
+    <!-- defer옵션 : Browser가 script를 다운로드 받을 때까지 기다리지 않고, HTML을 표기하기 때문에 성능 ↑ -->
+    <script src="src/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div>
+        <img src="images/favicon.ico" alt="logo" />
+        <!-- #만 설정하게 되면, KOO를 클릭했을 때 current page의 제일 상단으로 이동 -->
+        <h1><a href="#">KOO</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <!-- 'a' tag : page 외부 또는 내부의 특정한 위치로 이동하는 하이퍼링크 -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">My work</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <img src="images/profile.png" alt="KOO's profile" />
+        <h2>Hello I&#39;m Front&#45;End Developer KMS</h2>
+        <p>
+          I will become a front&#45;end developer who continues to develop
+          without staying in the present&#46;
+        </p>
+      </section>
+      <!-- About -->
+      <section id="about">
+        <h2>About me</h2>
+        <!-- Lorem(랜덤한 문장) 상태이기 때문에, 나를 나타내거나 어필할 수 있는 문장으로 대체!! -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis
+          explicabo facere qui exercitationem repellat aliquam dolorum
+          necessitatibus, pariatur vero voluptates error totam, quasi molestiae
+          quaerat quibusdam! Quasi, aliquid eos.
+        </p>
+        <ul>
+          <li>
+            <i class="fa-brands fa-html5"></i>
+            <p>Front-end</p>
+            <p>HTML, CSS, Javascript, React, Vue</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-mobile"></i>
+            <p>Mobile</p>
+            <p>Android, iOS</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-server"></i>
+            <p>Back-end</p>
+            <p>Javascript, Python, NodeJs</p>
+          </li>
+        </ul>
+        <!-- 경력, 프로젝트 경험 내용, 학교 동아리 활동, 학력 등 기록 -->
+        <ul>
+          <li>
+            <img src="images/jobs/google.png" alt="google logo" />
             <div>
-                <img src="images/favicon.ico" alt="logo">
-                <!-- #만 설정하게 되면, KOO를 클릭했을 때 current page의 제일 상단으로 이동 -->
-                <h1><a href="#">KOO</a></h1>
+              <p>Google as Senior Software Engineer</p>
+              <p>2019 0ct - Until now</p>
             </div>
-            <nav>
-                <ul>
-                    <!-- 'a' tag : page 외부 또는 내부의 특정한 위치로 이동하는 하이퍼링크 -->
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#work">My work</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Main -->
-        <main>
-            <!-- Home -->
-            <section id="home">
-                <img src="images/profile.png" alt="KOO's profile">
-                <h2>Hello I&#39;m Front&#45;End Developer KMS </h2>
-                <p>I will become a front&#45;end developer who continues to develop without staying in the present&#46;</p>
-            </section>
-            <!-- About -->
-            <section id="about">
-                <h2>About me</h2>
-                <!-- Lorem(랜덤한 문장) 상태이기 때문에, 나를 나타내거나 어필할 수 있는 문장으로 대체!! -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis explicabo facere qui exercitationem repellat aliquam dolorum necessitatibus, pariatur vero voluptates error totam, quasi molestiae quaerat quibusdam! Quasi, aliquid eos.</p>
-                <ul>
-                    <li>
-                        <i class="fa-brands fa-html5"></i>
-                        <p>Front-end</p>
-                        <p>HTML, CSS, Javascript, React, Vue</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-mobile"></i>
-                        <p>Mobile</p>
-                        <p>Android, iOS</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-server"></i>
-                        <p>Back-end</p>
-                        <p>Javascript, Python, NodeJs</p>
-                    </li>
-                </ul>
-                <!-- 경력, 프로젝트 경험 내용, 학교 동아리 활동, 학력 등 기록 -->
-                <ul>
-                    <li><img src="images/jobs/google.png" alt="google logo">
-                        <div>
-                            <p>Google as Senior Software Engineer</p>
-                            <p>2019 0ct - Until now</p>
-                        </div>
-                    </li>
-                    <li><img src="images/jobs/samsung.png" alt="samsung logo">
-                        <div>
-                            <p>Samsung as Software Engineer</p>
-                            <p>2014 Sept - 2019 0ct</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <!-- Skills -->
-            <section id="skills">
-                <h2>My Skills</h2>
-                <p>Skills & Attributes</p>
-                <!-- 현재 Lorem으로 설정되어 있기 때문에, 추후 내가 가지고 있는 Skills 또는 강점 등을 기입 -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur voluptatem accusamus dicta vitae! Modi ipsa excepturi laudantium facere, consequuntur ipsam earum porro dolores vitae nisi impedit ad delectus cum!</p>
-                <div>
-                    <section>
-                        <h3>Coding Skills</h3>
-                        <ul>
-                            <li>
-                                <div><span>HTML</span><span>98%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>CSS</span><span>90%</span></div>
-                                <div><div style="width: 90%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>Javascript</span><span>90%</span></div>
-                                <div><div style="width: 90%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>TypeScript</span><span>80%</span></div>
-                                <div><div style="width: 80%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>React</span><span>79%</span></div>
-                                <div><div style="width: 79%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>NodeJs</span><span>68%</span></div>
-                                <div><div style="width: 68%;"></div></div>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Visual studio code</li>
-                            <li>IntelliJ</li>
-                            <li>Android Studio tools</li>
-                            <li>iOS development tools</li>
-                            <li>Sketch app</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Etc</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>Scrum Master</li>
-                            <li>Math</li>
-                        </ul>
-                    </section>
-                </div>
-            </section>
-            <!-- Work -->
-            <section id="work"></section>
-            <!-- Testimonials -->
-            <section id="testimonials"></section>
-            <!-- Arrow up -->
-            <aside></aside>
-        </main>
-        <!-- Footer -->
-        <footer id="contact"></footer>
-    </body>
+          </li>
+          <li>
+            <img src="images/jobs/samsung.png" alt="samsung logo" />
+            <div>
+              <p>Samsung as Software Engineer</p>
+              <p>2014 Sept - 2019 0ct</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Skills -->
+      <section id="skills">
+        <h2>My Skills</h2>
+        <p>Skills & Attributes</p>
+        <!-- 현재 Lorem으로 설정되어 있기 때문에, 추후 내가 가지고 있는 Skills 또는 강점 등을 기입 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+          consequatur voluptatem accusamus dicta vitae! Modi ipsa excepturi
+          laudantium facere, consequuntur ipsam earum porro dolores vitae nisi
+          impedit ad delectus cum!
+        </p>
+        <div>
+          <section>
+            <h3>Coding Skills</h3>
+            <ul>
+              <li>
+                <div><span>HTML</span><span>98%</span></div>
+                <div><div style="width: 98%"></div></div>
+              </li>
+              <li>
+                <div><span>CSS</span><span>90%</span></div>
+                <div><div style="width: 90%"></div></div>
+              </li>
+              <li>
+                <div><span>Javascript</span><span>90%</span></div>
+                <div><div style="width: 90%"></div></div>
+              </li>
+              <li>
+                <div><span>TypeScript</span><span>80%</span></div>
+                <div><div style="width: 80%"></div></div>
+              </li>
+              <li>
+                <div><span>React</span><span>79%</span></div>
+                <div><div style="width: 79%"></div></div>
+              </li>
+              <li>
+                <div><span>NodeJs</span><span>68%</span></div>
+                <div><div style="width: 68%"></div></div>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Tools</h3>
+            <ul>
+              <li>Visual studio code</li>
+              <li>IntelliJ</li>
+              <li>Android Studio tools</li>
+              <li>iOS development tools</li>
+              <li>Sketch app</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Etc</h3>
+            <ul>
+              <li>Git</li>
+              <li>Scrum Master</li>
+              <li>Math</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <!-- Work -->
+      <section id="work">
+        <h2>My work</h2>
+        <p>Project</p>
+        <ul>
+          <li>
+            <button>All <span>8</span></button>
+          </li>
+          <li>
+            <button>Front-end <span>3</span></button>
+          </li>
+          <li>
+            <button>Back-end <span>3</span></button>
+          </li>
+          <li>
+            <button>Mobile <span>2</span></button>
+          </li>
+        </ul>
+        <ul>
+          <!-- alt에는 project title에 대한 설명을 넣어주면 좋음-->
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project1.webp" alt="project1" />
+              <div>
+                <h3>Project #1</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project2.webp" alt="project2" />
+              <div>
+                <h3>Project #2</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project3.webp" alt="project3" />
+              <div>
+                <h3>Project #3</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project4.webp" alt="project4" />
+              <div>
+                <h3>Project #4</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project5.webp" alt="project5" />
+              <div>
+                <h3>Project #5</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project6.webp" alt="project6" />
+              <div>
+                <h3>Project #6</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project7.webp" alt="project7" />
+              <div>
+                <h3>Project #7</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project8.webp" alt="project8" />
+              <div>
+                <h3>Project #8</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonials"></section>
+      <!-- Arrow up -->
+      <aside></aside>
+    </main>
+    <!-- Footer -->
+    <footer id="contact"></footer>
+  </body>
 </html>
