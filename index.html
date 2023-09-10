@@ -312,9 +312,40 @@
         </ul>
       </section>
       <!-- Arrow up -->
-      <aside></aside>
+      <aside>
+        <!-- a tag 안에 아무런 의미가 없는 i tag만 들어있으므로, 웹 접근성을 높이기 위해서 가급적 a tag에 title을 지정해주는 것이 좋음 -->
+        <a href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
     </main>
     <!-- Footer -->
-    <footer id="contact"></footer>
+    <footer id="contact">
+      <h2>Let&#39;s talk</h2>
+      <p>kb908@naver.com</p>
+      <ul>
+        <!-- a tag 안에 아무런 의미가 없는 i tag만 들어있으므로, 웹 접근성을 높이기 위해서 가급적 a tag에 title을 지정해주는 것이 좋음 -->
+        <!-- 외부 웹사이트의 연결이기 때문에 target="_blank"로 지정 -->
+        <li>
+          <a
+            href="https://github.com/KMS6821"
+            target="_blank"
+            title="my github link"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/KMS6821"
+            target="_blank"
+            title="my linkedin link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <p>©Dream Coding KMS - All rights reserved</p>
+    </footer>
   </body>
 </html>
