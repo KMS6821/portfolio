@@ -1,0 +1,59 @@
+/* Global */
+:root {
+  /* App Colors */
+  --color-primary: var(--color-black);
+  --color-primary-variant: var(--color-gray);
+  --color-accent: var(--color-blue);
+  --color-accent-variant: var(--color-orange);
+  --color-text: var(--color-white);
+
+  /* Colors */
+  --color-white: #ffffff;
+  --color-black: #050a13;
+  --color-blue: #03e8f9;
+  --color-orange: #fd6413;
+  --color-gray: #1b1e26;
+}
+
+/* 모든 box-sizing을 padding과 border까지 합해서 width와 height이 지정될 수 있도록 함 */
+* {
+  box-sizing: border-box;
+}
+
+/* HTML Head부분에 적용했던 Open Sans font를 CSS에 코딩 */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* browser에서 설정된 기본적인 setting값을 reset */
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+/* list-style: none : ul tag에 목록과 같은 item을 제거 */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* text-decoration: none : 밑줄을 제거 */
+/* a tag가 blue color로 link화 되어있는 것을 black color로 변경 */
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+/* background-color: transparent : button의 색상을 제거 */
+button {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+
+button:focus {
+  outline: 1px solid var(--color-blue);
+}
