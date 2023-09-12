@@ -108,3 +108,53 @@ button:focus {
   border: 1px solid var(--color-accent);
   border-radius: 4px;
 }
+
+/* Home */
+#home {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 5rem 1rem;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+/* object-fit: cover 옵션을 사용하면, image의 원래 비율이 유지 */
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid var(--color-accent);
+}
+
+.home__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home_title--strong {
+  color: var(--color-accent);
+}
+
+.home__description {
+  font-size: 1.3rem;
+}
+
+/* a tag는 inline tag이기 때문에, 위아래로 margin이 적용되지 않음 >> display: inline-block을 사용하여 a tag가 한 줄을 차지하지만 실제 background는 컨텐츠의 size에 맞게 맞춰지도록 해줌 */
+.home__contact {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* background-color: transparent 옵션은 background color를 투명하게 만들어주는 역할 */
+/* border를 사용할 경우, home__contact에 height에 대한 정보가 없으므로, border값 만큼 컨텐츠 밀림 현상이 발생함 >> border가 아닌 outline으로 사용하여 방지 */
+.home__contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
+}
