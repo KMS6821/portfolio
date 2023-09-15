@@ -418,7 +418,7 @@ button:focus {
   margin-bottom: 2rem;
 }
 
-/* order는 0부터 시작 */
+/* 'testimonial:nth-child(even)' : testimonial에 있는 list들의 짝수번 째 순서를 지정 / order는 0부터 시작 */
 /* 기존의 html을 수정하지 않고, css만으로 배치 수정 */
 .testimonial:nth-child(even) .testimonial__img {
   order: 1;
@@ -441,4 +441,40 @@ button:focus {
   color: var(--color-accent);
   font-weight: bold;
   filter: brightness(70%);
+}
+
+/* Arrow up */
+.arrow-up {
+  background-color: var(--color-primary);
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 2.5px 2.5px 0px 0px var(--color-accent);
+}
+
+/* Footer */
+#contact {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contact__link {
+  transition: color 200ms ease-in;
+}
+
+.contact__link:hover {
+  color: var(--color-accent);
 }
