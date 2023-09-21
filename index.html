@@ -225,30 +225,31 @@
           <h2 class="title">My work</h2>
           <p class="description">Project</p>
           <ul class="categories">
+            <!-- UI와 code를 구분해주기 위해서 button tag안에 있는 text를 기준으로 filtering 하는 것이 아니라 'data'를 사용해서 logic을 code에 녹여줌 >> button이 클릭 되었을 때, data 안에 들어있는 text를 기준으로 filtering -->
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="all">
                 All <span class="category__count">8</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Front-end <span class="category__count">3</span>
+              <button class="category" data-category="front-end">
+                Front-end <span class="category__count">4</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Back-end <span class="category__count">3</span>
+              <button class="category" data-category="back-end">
+                Back-end <span class="category__count">2</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="mobile">
                 Mobile <span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
             <!-- alt에는 project title에 대한 설명을 넣어주면 좋음-->
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project1.webp"
@@ -261,7 +262,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project2.webp"
@@ -274,7 +275,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project3.webp"
@@ -287,7 +288,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project4.webp"
@@ -300,7 +301,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project5.webp"
@@ -313,7 +314,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project6.webp"
@@ -326,7 +327,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project7.webp"
@@ -339,7 +340,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project8.webp"
