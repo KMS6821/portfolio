@@ -45,18 +45,16 @@
     <header class="header">
       <div class="header__logo">
         <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
-        <!-- #만 설정하게 되면, KOO를 클릭했을 때 current page의 제일 상단으로 이동 -->
-        <h1 class="header__logo__title"><a href="#">KOO</a></h1>
+        <h1 class="header__logo__title"><a href="#">Ellie</a></h1>
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <!-- 'a' tag : page 외부 또는 내부의 특정한 위치로 이동하는 하이퍼링크 -->
           <li><a class="header__menu__item active" href="#home">Home</a></li>
           <li><a class="header__menu__item" href="#about">About</a></li>
           <li><a class="header__menu__item" href="#skills">Skills</a></li>
           <li><a class="header__menu__item" href="#work">My work</a></li>
           <li>
-            <a class="header__menu__item" href="#testimonials">Testimonials</a>
+            <a class="header__menu__item" href="#testimonial">Testimonial</a>
           </li>
           <li><a class="header__menu__item" href="#contact">Contact</a></li>
         </ul>
@@ -77,7 +75,7 @@
           />
           <h2 class="home__title">
             Hello <br />I&#39;m
-            <strong class="home_title--strong">Front&#45;End Developer</strong>
+            <strong class="home__title--strong">Front&#45;End Developer</strong>
             KMS
           </h2>
           <p class="home__description">
@@ -100,17 +98,17 @@
         <ul class="majors">
           <li class="major">
             <i class="fa-brands fa-html5 major__icon"></i>
-            <p class="major__tilte">Front-end</p>
-            <p>HTML, CSS, Javascript, React, Vue</p>
+            <p class="major__title">Front-end</p>
+            <p>HTML, CSS, JavaScript, React, Vue</p>
           </li>
           <li class="major">
             <i class="fa-solid fa-mobile major__icon"></i>
-            <p class="major__tilte">Mobile</p>
+            <p class="major__title">Mobile</p>
             <p>Android, iOS, React Navtive, Flutter, Java, Swift</p>
           </li>
           <li class="major">
             <i class="fa-solid fa-server major__icon"></i>
-            <p class="major__tilte">Back-end</p>
+            <p class="major__title">Back-end</p>
             <p>Javascript, Python, NodeJs</p>
           </li>
         </ul>
@@ -120,14 +118,14 @@
             <img src="images/jobs/google.png" alt="google logo" />
             <div>
               <p class="job__name">Google as Senior Software Engineer</p>
-              <p class="job__period">2019 0ct - Until now</p>
+              <p class="job__period">2019 Oct - Until now</p>
             </div>
           </li>
           <li class="job">
             <img src="images/jobs/samsung.png" alt="samsung logo" />
             <div>
               <p class="job__name">Samsung as Software Engineer</p>
-              <p class="job__period">2014 Sept - 2019 0ct</p>
+              <p class="job__period">2014 Sept - 2019 Oct</p>
             </div>
           </li>
         </ul>
@@ -166,7 +164,7 @@
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>Javascript</span><span>90%</span>
+                    <span>JavaScript</span><span>90%</span>
                   </div>
                   <div class="bar__bg">
                     <div class="bar__value" style="width: 90%"></div>
@@ -198,12 +196,12 @@
                 </li>
               </ul>
             </section>
-            <section class="skills_tools">
+            <section class="skills__tools">
               <h3 class="skills__title">Tools</h3>
               <ul>
-                <li>Visual studio code</li>
+                <li>Visual studio Code</li>
                 <li>IntelliJ</li>
-                <li>Android Studio tools</li>
+                <li>Android Studio Code</li>
                 <li>iOS development tools</li>
                 <li>Sketch app</li>
               </ul>
@@ -224,7 +222,7 @@
       <section id="work" class="section">
         <div class="max-container">
           <h2 class="title">My work</h2>
-          <p class="description">Project</p>
+          <p class="description">Projects</p>
           <ul class="categories">
             <!-- UI와 code를 구분해주기 위해서 button tag안에 있는 text를 기준으로 filtering 하는 것이 아니라 'data'를 사용해서 logic을 code에 녹여줌 >> button이 클릭 되었을 때, data 안에 들어있는 text를 기준으로 filtering -->
             <li>
@@ -359,8 +357,8 @@
       </section>
       <!-- Testimonials -->
       <!-- 현재 section에는 bg color가 들어가지 않으므로 section에 max-container가 들어가도 상관없음 -->
-      <section id="testimonials" class="section max-container">
-        <h2 class="title">Testimonials</h2>
+      <section id="testimonial" class="section max-container">
+        <h2 class="title">Testimonial</h2>
         <p class="description">See what they say about me</p>
         <ul class="testimonials">
           <li class="testimonial">

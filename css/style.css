@@ -23,6 +23,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* HTML Head부분에 적용했던 Open Sans font를 CSS에 코딩 */
 body {
   font-family: "Open Sans", sans-serif;
